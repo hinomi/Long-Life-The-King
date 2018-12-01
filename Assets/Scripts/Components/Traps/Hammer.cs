@@ -14,6 +14,7 @@ namespace Components.Traps {
 		
 		#region Trap methods
 		public override void Disable() {
+			enabled = false;
 			animator.Play("Idle");
 		}
 		#endregion

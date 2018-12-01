@@ -1,9 +1,15 @@
-﻿namespace Components.DeathControllers {
+﻿using UnityEngine;
+
+namespace Components.DeathControllers {
 	public class PawnDeathController : AbstractDeathController {
+		#region Private fields
+		[SerializeField] private Transform spawner;
+		#endregion
+		
 		#region Death Controller methods
 		public override void KilledBy(AbstractTrap trap) {
 			trap.Disable();
-			Destroy(gameObject);
+			transform.position = spawner.transform.position;
 		}
 		#endregion
 	}
