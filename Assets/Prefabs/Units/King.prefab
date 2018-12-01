@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4466849701785370}
   - component: {fileID: 212615622785646524}
-  - component: {fileID: 61218123611027144}
-  - component: {fileID: 114775990042258264}
   m_Layer: 13
   m_Name: Graphics
   m_TagString: Untagged
@@ -41,6 +39,8 @@ GameObject:
   - component: {fileID: 95225329951113536}
   - component: {fileID: 114780434047246802}
   - component: {fileID: 50600724726323956}
+  - component: {fileID: 61788129180579204}
+  - component: {fileID: 114218066334104662}
   m_Layer: 13
   m_Name: King
   m_TagString: King
@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848963994291694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: -2.47, z: 0}
+  m_LocalPosition: {x: -7.5, y: -2.447, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4466849701785370}
@@ -95,30 +95,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61218123611027144
+--- !u!61 &61788129180579204
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1167225774972138}
+  m_GameObject: {fileID: 1848963994291694}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 1}
-    newSize: {x: 0.5, y: 1}
-    adaptiveTilingThreshold: 0.5
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 1}
+  m_Size: {x: 0.5, y: 1.0000001}
   m_EdgeRadius: 0
 --- !u!95 &95225329951113536
 Animator:
@@ -138,6 +138,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114218066334104662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1848963994291694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b4b4ddabcdf0948b1c728cd2e8ccc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 2147483648
 --- !u!114 &114576388001202210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,22 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcff8e5506142194e9c2360e61e183b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundChecker: {fileID: 114775990042258264}
   speed: 2
---- !u!114 &114775990042258264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1167225774972138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17b4b4ddabcdf0948b1c728cd2e8ccc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 2147483648
 --- !u!114 &114780434047246802
 MonoBehaviour:
   m_ObjectHideFlags: 1
