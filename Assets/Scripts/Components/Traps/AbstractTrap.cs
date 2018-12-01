@@ -1,7 +1,7 @@
 ﻿using Components.DeathControllers;
 using UnityEngine;
 
-namespace Components {
+namespace Components.Traps {
 	public abstract class AbstractTrap : MonoBehaviour {
 		#region Life cycle
 		private void OnTriggerEnter2D(Collider2D coll) {

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Components.Traps;
+using UnityEngine;
 
 namespace Components.DeathControllers {
 	public class KingDeathController : AbstractDeathController {
