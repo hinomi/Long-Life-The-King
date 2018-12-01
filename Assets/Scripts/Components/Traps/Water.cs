@@ -13,6 +13,10 @@ namespace Components.Traps {
 		private Tilemap map;
 		#endregion
 
+		#region Protected fields
+		protected new readonly string animationName = "Water";
+		#endregion
+
 		#region Life cycle
 		private void Awake() {
 			coll = GetComponent<Collider2D>();

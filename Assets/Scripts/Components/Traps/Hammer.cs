@@ -6,6 +6,10 @@ namespace Components.Traps {
 		private Animator animator;
 		#endregion
 
+		#region Protected fields
+		protected new readonly string animationName = "Hammer";
+		#endregion
+
 		#region Life cycle
 		private void Awake() {
 			animator = GetComponent<Animator>();
