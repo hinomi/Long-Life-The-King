@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Components {
 	public class AutoMove : MonoBehaviour {
