@@ -18,7 +18,8 @@ namespace Components.DeathControllers {
 		public override void KilledBy(AbstractTrap trap) {
 			var autoMove = GetComponent<AutoMove>();
 			autoMove.enabled = false;
-			animator.Play(trap.AnimationName + "Death");
+//			animator.Play(trap.AnimationName + "Death");
+			Dead();
 		}
 		#endregion
 

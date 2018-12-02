@@ -124,7 +124,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You died...
+  m_Text: Your king died...
 --- !u!114 &114655296381572890
 MonoBehaviour:
   m_ObjectHideFlags: 1
