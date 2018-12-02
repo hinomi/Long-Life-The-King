@@ -5,13 +5,17 @@ namespace Components {
 		#region Properties
 		public float Speed {
 			get { return speed; }
-			set { speed = value; }
+			set {
+				speed = value;
+				spriteRenderer.flipY = speed < 0;
+			}
 		}
 		
 		#endregion
 		
 		#region Private fields
 		[SerializeField] private float speed = 2f;
+		[SerializeField] private SpriteRenderer spriteRenderer;
 
 		private Rigidbody2D body;
 		#endregion
