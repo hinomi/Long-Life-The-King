@@ -7,7 +7,7 @@ namespace Components {
 			get { return speed; }
 			set {
 				speed = value;
-				spriteRenderer.flipY = speed < 0;
+				spriteRenderer.flipX = speed < 0;
 			}
 		}
 		
