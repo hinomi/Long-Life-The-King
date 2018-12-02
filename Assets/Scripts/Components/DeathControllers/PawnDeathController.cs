@@ -11,6 +11,7 @@ namespace Components.DeathControllers {
 		#endregion
 		
 		#region Private fields
+		[SerializeField] protected LevelEnd levelEnd;
 		[SerializeField] private Transform spawner;
 		#endregion
 		
@@ -18,6 +19,7 @@ namespace Components.DeathControllers {
 		public override void KilledBy(AbstractTrap trap) {
 			trap.Disable();
 			transform.position = spawner.transform.position;
+			levelEnd.IncrementDeathCount();
 		}
 		#endregion
 	}
