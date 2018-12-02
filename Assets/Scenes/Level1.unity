@@ -595,6 +595,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114978799346680716, guid: 06a7fe2aeea09694186815220ae01372,
+        type: 2}
+      propertyPath: speed
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06a7fe2aeea09694186815220ae01372, type: 2}
   m_IsPrefabAsset: 0
@@ -1378,11 +1383,6 @@ Prefab:
       propertyPath: deathPanel
       value: 
       objectReference: {fileID: 1850768349}
-    - target: {fileID: 114576388001202210, guid: db53755cdb6757941960058c0d6b834b,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db53755cdb6757941960058c0d6b834b, type: 2}
   m_IsPrefabAsset: 0
@@ -17315,7 +17315,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 3.0851302}
@@ -17338,7 +17338,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937749803}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.22, y: 3.07, z: -0.0703125}
+  m_LocalPosition: {x: 35.22, y: 3.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

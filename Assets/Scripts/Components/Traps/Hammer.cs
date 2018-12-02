@@ -3,6 +3,8 @@
 namespace Components.Traps {
 	public class Hammer : AbstractTrap {
 		#region Private fields
+		[SerializeField] private float speed = 1;
+		
 		private Animator animator;
 		#endregion
 
@@ -13,12 +15,13 @@ namespace Components.Traps {
 		#region Life cycle
 		private void Awake() {
 			animator = GetComponent<Animator>();
+			animator.speed = speed;
 		}
-		#endregion
+				#endregion
 		
 		#region Trap methods
 		public override void Disable() {
-			enabled = false;
+			active = false;
 			animator.Play("Idle");
 		}
 		#endregion

@@ -11,10 +11,13 @@ namespace Components.Traps {
 		
 		#region Protected fields
 		protected string animationName;
+		protected bool active = true;
 		#endregion
 		
 		#region Life cycle
 		private void OnTriggerEnter2D(Collider2D coll) {
+			if (!active) return;
+			
 			var deathController = coll.GetComponent<AbstractDeathController>();
 			if (deathController != null) deathController.KilledBy(this);
 		}

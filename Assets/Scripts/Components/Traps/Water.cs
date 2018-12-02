@@ -23,6 +23,7 @@ namespace Components.Traps {
 		
 		#region Abstract Trap methods
 		public override void Disable() {
+			active = false;
 			coll.isTrigger = false;
 
 			var minPos = grid.WorldToCell(coll.bounds.min);
