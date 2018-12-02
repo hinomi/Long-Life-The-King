@@ -264,7 +264,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1308437073401360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.57, y: 2, z: 0}
+  m_LocalPosition: {x: 124.38, y: 0.47, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224109226180107434}
@@ -569,9 +569,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af638bc7c6342d58b50571f91de2f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Test2
+  nextLevel: Level2
   canvas: {fileID: 223915859250491396}
-  oneStarCount: 10
+  oneStarCount: 5
   twoStarCount: 6
   threeStarCount: 3
   firstStar: {fileID: 114818595686269106}
