@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Components {
+	[RequireComponent(typeof(AudioSource))]
 	public class LevelEnd : MonoBehaviour {
 		#region Private fields
 		[SerializeField, SceneName] private string nextLevel;
@@ -15,11 +16,18 @@ namespace Components {
 		[SerializeField] private Star secondStar;
 		[SerializeField] private Star thirdStar;
 		[SerializeField] private Star specialStar;
+		[SerializeField] private AudioClip endClip;
+		[SerializeField] private AudioSource environmentAudio;
 
 		private int deathCount;
+		private AudioSource audioSource;
 		#endregion
 
 		#region Life cycle
+		private void Awake() {
+			audioSource = GetComponent<AudioSource>();
+		}
+		
 		private void OnTriggerEnter2D(Collider2D coll) {
 			if (coll.CompareTag("King")) {
 				if (deathCount <= oneStarCount) {
@@ -34,6 +42,9 @@ namespace Components {
 				}
 				
 				Time.timeScale = 0;
+				audioSource.clip = endClip;
+				audioSource.Play();
+				environmentAudio.Stop();
 				canvas.gameObject.SetActive(true);
 			}
 			else if (coll.CompareTag("Pawn")) {

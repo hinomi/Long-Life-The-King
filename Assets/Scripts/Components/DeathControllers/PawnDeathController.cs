@@ -1,4 +1,5 @@
 ﻿using Components.Traps;
+using Gamekit2D;
 using UnityEngine;
 
 namespace Components.DeathControllers {
@@ -13,6 +14,7 @@ namespace Components.DeathControllers {
 		#region Private fields
 		[SerializeField] protected LevelEnd levelEnd;
 		[SerializeField] private Transform spawner;
+		[SerializeField] private RandomAudioPlayer deathAudioPlayer;
 		#endregion
 		
 		#region Death Controller methods
@@ -20,6 +22,7 @@ namespace Components.DeathControllers {
 			trap.Disable();
 			transform.position = spawner.transform.position;
 			levelEnd.IncrementDeathCount();
+			deathAudioPlayer.PlayRandomSound();
 		}
 		#endregion
 	}

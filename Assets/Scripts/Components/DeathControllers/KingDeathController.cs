@@ -5,20 +5,12 @@ namespace Components.DeathControllers {
 	public class KingDeathController : AbstractDeathController {
 		#region Private fields
 		[SerializeField] private GameObject deathPanel;
-		private Animator animator;
-		#endregion
-
-		#region Life cycle
-		private void Awake() {
-			animator = GetComponent<Animator>();
-		}
 		#endregion
 		
 		#region Death Controller methods
 		public override void KilledBy(AbstractTrap trap) {
 			var autoMove = GetComponent<AutoMove>();
 			autoMove.enabled = false;
-//			animator.Play(trap.AnimationName + "Death");
 			Dead();
 		}
 		#endregion
