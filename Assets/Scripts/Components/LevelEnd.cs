@@ -1,5 +1,4 @@
 ﻿using Components.UI;
-using Gamekit2D;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +6,7 @@ namespace Components {
 	[RequireComponent(typeof(AudioSource))]
 	public class LevelEnd : MonoBehaviour {
 		#region Private fields
-		[SerializeField, SceneName] private string nextLevel;
+		[SerializeField] private string nextLevel;
 		[SerializeField] private Canvas canvas;
 		[SerializeField] private int oneStarCount;
 		[SerializeField] private int twoStarCount;
