@@ -3012,6 +3012,16 @@ Prefab:
       propertyPath: environmentAudio
       value: 
       objectReference: {fileID: 377168959}
+    - target: {fileID: 114308913417962076, guid: 24582523f712eaa4abe0a9de8a1491bb,
+        type: 2}
+      propertyPath: threeStarCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114308913417962076, guid: 24582523f712eaa4abe0a9de8a1491bb,
+        type: 2}
+      propertyPath: twoStarCount
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24582523f712eaa4abe0a9de8a1491bb, type: 2}
   m_IsPrefabAsset: 0

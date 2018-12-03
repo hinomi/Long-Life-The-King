@@ -1149,7 +1149,7 @@ MonoBehaviour:
     m_Enabled: 1
   Horizontal:
     positive: 100
-    negative: 113
+    negative: 97
     controllerAxis: 1
   Vertical:
     positive: 122

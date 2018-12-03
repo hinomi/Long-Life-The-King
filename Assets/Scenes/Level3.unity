@@ -641,7 +641,7 @@ Prefab:
     - target: {fileID: 114308913417962076, guid: 24582523f712eaa4abe0a9de8a1491bb,
         type: 2}
       propertyPath: oneStarCount
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1139641442606514, guid: 24582523f712eaa4abe0a9de8a1491bb, type: 2}
       propertyPath: m_IsActive

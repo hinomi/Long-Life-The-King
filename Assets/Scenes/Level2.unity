@@ -1062,6 +1062,11 @@ Prefab:
       propertyPath: environmentAudio
       value: 
       objectReference: {fileID: 552272071}
+    - target: {fileID: 114308913417962076, guid: 24582523f712eaa4abe0a9de8a1491bb,
+        type: 2}
+      propertyPath: oneStarCount
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24582523f712eaa4abe0a9de8a1491bb, type: 2}
   m_IsPrefabAsset: 0
